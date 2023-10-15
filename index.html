@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid" id="container">
+        <div>
+        <input id="input" placeholder="Type Your List"><br>
+        <button class="btn btn-primary" onclick="add()">ADD</button>
+        <ol id="list">
+            <br>
+            <li>DO YOUR LIST <button class="btn btn-success" onclick="del(event)">Delete</button></li>
+        </ol>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

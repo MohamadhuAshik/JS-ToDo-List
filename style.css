@@ -1,0 +1,30 @@
+.container-fluid {
+    background: url("./assets/images/pexels-antoni-shkraba-5810700.jpg") no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+   
+}
+.container-fluid::before {
+    position: absolute;
+    content: "";
+   width: 100vw;
+   height: 100vh; 
+   background-image: linear-gradient(to right,rgba(32,40,119,0.95),rgba(55,46,149,0.95),rgba(83,49,177,0.95),rgba(114,48,205,0.85),
+   rgba(150,41,230,0.95));
+   z-index: -1;  
+}
+#container div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 20px;
+}
